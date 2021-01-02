@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+body{
+    background-color: #9f5f80;
+}
+header{
+    width: 100%;
+    height: 90px;
+}
+header img{
+    width: 200px;
+    padding: 15px;
+    
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.login__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 400px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 60px;
+}
+.login__container h2{
+    color: white;
+    font-size: 2.4rem;
+    margin: 20px 0;
+    font-weight: bold;
+
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input{
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px white solid;
+    padding: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    outline: none;
+
+}
+.login__button{
+    margin: 20px 0;
+    height: 50px;
+    width: 300px;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 20px;
+    align-self: center;
+}
+.login__button:hover{
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.login__login{
+    display: flex;
+    justify-content: center;
+}
+.login__login a{
+    font-size: 1.6rem;
+    color: white;
+    text-decoration: none;
+
+}
+.login__login a:hover{
+    text-decoration: underline;
+}
+
+::placeholder{
+    color: white;
+}
+@media only screen and (max-width: 600px){
+    .login__container{
+        border: none;
+        background-color: transparent;
+        padding: 0 10px;
+    }
+
+}
